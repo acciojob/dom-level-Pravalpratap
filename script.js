@@ -1,10 +1,9 @@
 //your JS code here. If required.
-let elment=document.getElementByID("level")
+let element = document.getElementById('level'); // get the element
+let counter = 0; // initialize counter
 
-let counter=1
-while(elment){
-	counter++;
-	elment=elment.parentNode
-	
+while(element) { // loop till we reach the root
+    counter++; // increment the counter
+    element = element.parentNode; // get the parent element
 }
 alert('The level of the element is: ' + (counter-1));
